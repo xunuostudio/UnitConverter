@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>單位換算器</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 左側選單 -->
+        <div class="sidebar">
+            <h2>單位類型</h2>
+            <div class="menu">
+                <button class="menu-item active" data-type="length">長度</button>
+                <button class="menu-item" data-type="weight">重量</button>
+                <button class="menu-item" data-type="area">面積</button>
+                <button class="menu-item" data-type="volume">體積</button>
+                <button class="menu-item" data-type="time">時間</button>
+                <button class="menu-item" data-type="pressure">壓力</button>
+                <button class="menu-item" data-type="temperature">溫度</button>
+                <button class="menu-item" data-type="force">力單位</button>
+                <button class="menu-item" data-type="speed">速度</button>
+                <button class="menu-item" data-type="angle">角度</button>
+            </div>
+        </div>
+
+        <!-- 右側計算器 -->
+        <div class="calculator">
+            <h1>單位換算器</h1>
+            <div class="converter-container">
+                <div class="units-table-container">
+                    <h3 id="current-type-title">長度單位換算</h3>
+                    <div class="units-table" id="units-table">
+                        <!-- 動態生成的單位輸入框 -->
+                    </div>
+                    <button id="clear-btn">清除所有</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
